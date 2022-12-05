@@ -7,6 +7,8 @@
 
   system.stateVersion = "22.11";
 
+  networking.interfaces.enp0s31f6.useDHCP = true;
+
   fileSystems = {
     "/persist" = {
       device = "/dev/sda2";
