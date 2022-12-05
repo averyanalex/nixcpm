@@ -18,6 +18,7 @@
     vmvariant
     yggdrasil
   ]) ++ (with inputs.self.nixosModules.profiles; [
+    autoupgrade
     board
     chromium
     fonts
