@@ -1,0 +1,4 @@
+.direnv
+nixos.qcow2
+nixos-efi-vars.fd
+result
