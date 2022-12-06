@@ -38,5 +38,15 @@
     "org/gnome/desktop/lockdown" = {
       disable-lock-screen = true;
     };
+    "org/gnome/shell" = {
+      favorite-apps = [
+        "org.gnome.Nautilus.desktop"
+        "com.github.flxzt.rnote.desktop"
+        "writer.desktop"
+        "impress.desktop"
+        "calc.desktop"
+        "chromium-browser.desktop"
+      ];
+    };
   };
 }
