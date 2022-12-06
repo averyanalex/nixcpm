@@ -12,7 +12,6 @@
     pipewire
     polkit
     ruloc
-    ssh-server
     sudo
     timezone
     vmvariant
@@ -28,6 +27,7 @@
     plasma
     plymouth
     sdboot
+    ssh
     users
   ]);
 }
