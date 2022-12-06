@@ -22,10 +22,11 @@
     board
     chromium
     fonts
+    gnome
     home
     libreoffice
     persist
-    plasma
+    # plasma
     plymouth
     sdboot
     users
