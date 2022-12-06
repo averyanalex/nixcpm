@@ -15,7 +15,6 @@
     ssh-server
     sudo
     timezone
-    vmvariant
     yggdrasil
   ]) ++ (with inputs.self.nixosModules.profiles; [
     autoupgrade
@@ -26,9 +25,9 @@
     home
     libreoffice
     persist
-    # plasma
     plymouth
     sdboot
     users
+    vm
   ]);
 }

@@ -10,6 +10,7 @@
   networking.hostName = "board";
 
   networking.interfaces.enp0s31f6.useDHCP = true;
+  networking.networkmanager.enable = false;
 
   fileSystems = {
     "/persist" = {
