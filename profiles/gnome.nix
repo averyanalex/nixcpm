@@ -31,4 +31,12 @@
     atomix # puzzle game
   ]);
 
+  home-manager.users.user.dconf.settings = {
+    "org/gnome/desktop/screensaver" = {
+      lock-enabled = false;
+    };
+    "org/gnome/desktop/lockdown" = {
+      disable-lock-screen = true;
+    };
+  };
 }
