@@ -1,16 +1,21 @@
 { pkgs, ... }:
 {
-  services.xserver.enable = true;
+  services.xserver = {
+    enable = true;
 
-  services.xserver.displayManager = {
-    autoLogin.user = "user";
-    # defaultSession = "plasmawayland";
-    gdm = {
-      enable = true;
-      wayland = true;
+    displayManager = {
+      autoLogin.user = "user";
+      gdm = {
+        enable = true;
+        wayland = true;
+      };
     };
+
+    desktopManager.gnome.enable = true;
+
+    layout = "ru,us";
+    xkbOptions = "grp:win_space_toggle";
   };
-  services.xserver.desktopManager.gnome.enable = true;
 
   environment.gnome.excludePackages = (with pkgs; [
     gnome-photos
@@ -22,7 +27,6 @@
     gedit # text editor
     epiphany # web browser
     geary # email reader
-    evince # document viewer
     gnome-characters
     totem # video player
     tali # poker game
