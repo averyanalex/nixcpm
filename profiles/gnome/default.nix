@@ -71,6 +71,9 @@
       lock-enabled = false;
       user-switch-enabled = false;
     };
+    "org/gnome/desktop/session" = {
+      idle-delay = 0;
+    };
     "org/gnome/desktop/lockdown" = {
       disable-lock-screen = true;
       disable-log-out = true;
@@ -97,6 +100,7 @@
       favorite-apps = [
         "org.gnome.Nautilus.desktop"
         "com.github.flxzt.rnote.desktop"
+        "OpenBoard.desktop"
         "writer.desktop"
         "impress.desktop"
         "calc.desktop"
