@@ -13,6 +13,9 @@
   ];
 
   boot.loader.systemd-boot.consoleMode = "max";
+  boot.kernelParams = [
+    "video=DP-2:4096x2160@60"
+  ];
   hardware.video.hidpi.enable = true;
 
   boot.loader.systemd-boot.enable = true;

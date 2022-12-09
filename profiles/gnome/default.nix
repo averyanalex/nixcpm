@@ -48,7 +48,7 @@
 
   home-manager.users.user.dconf.settings = {
     "org/gnome/desktop/background" = {
-      picture-uri = "file://${../assets/wallpaper.png}";
+      picture-uri = "file://${../../assets/wallpaper.png}";
     };
 
     "org/gnome/shell/extensions/dash-to-dock" = {
@@ -107,5 +107,6 @@
 
   home-manager.users.user = {
     home.packages = with pkgs; [ gnome.gnome-tweaks gnome.dconf-editor ];
+    home.file.".config/monitors.xml".source = ./monitors.xml;
   };
 }
