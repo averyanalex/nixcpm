@@ -5,9 +5,10 @@
 
     displayManager = {
       autoLogin.user = "user";
+      defaultSession = "gnome-xorg";
       gdm = {
         enable = true;
-        wayland = true;
+        wayland = false;
       };
     };
 
