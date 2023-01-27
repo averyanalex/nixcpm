@@ -24,6 +24,7 @@
     gnome
     home
     libreoffice
+    onboard
     persist
     plymouth
     sdboot
