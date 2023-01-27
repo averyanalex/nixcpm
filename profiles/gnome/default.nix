@@ -49,7 +49,7 @@
 
   home-manager.users.user.dconf.settings = {
     "org/gnome/desktop/background" = {
-      picture-uri = "file://${../../assets/wallpaper.png}";
+      # picture-uri = "file://${../../assets/wallpaper.png}";
     };
 
     "org/gnome/shell/extensions/dash-to-dock" = {
