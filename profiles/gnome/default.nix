@@ -62,7 +62,7 @@
 
     "org/gnome/mutter" = {
       dynamic-workspaces = false;
-      experimental-features = [ "scale-monitor-framebuffer" ];
+      experimental-features = [ "scale-monitor-framebuffer" "x11-randr-fractional-scaling" ];
     };
     "org/gnome/shell/overrides" = {
       dynamic-workspaces = false;
@@ -100,6 +100,7 @@
       enabled-extensions = [ "dash-to-dock@micxgx.gmail.com" ];
       favorite-apps = [
         "org.gnome.Nautilus.desktop"
+        "onboard.desktop"
         "com.github.flxzt.rnote.desktop"
         "OpenBoard.desktop"
         "writer.desktop"
